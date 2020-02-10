@@ -29,21 +29,11 @@ import { t } from '../services/i18n';
 
 import Copyright from '../components/Copyright';
 import { mainDrawerItems } from "../containers/MenuItems";
-import { useStyles } from "../styles";
+import { useStyles, theme } from "../styles";
 
 
 /* Inspired on https://github.com/mui-org/material-ui/blob/master/docs/src/pages/getting-started/templates/dashboard/Dashboard.js */
 
-
-
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: '#ffffff'
-    },
-
-  }
-});
 
 const Home = () => {
   const classes = useStyles();

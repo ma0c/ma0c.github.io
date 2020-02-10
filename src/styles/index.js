@@ -1,6 +1,15 @@
-import {makeStyles} from "@material-ui/core/styles";
+import {createMuiTheme, makeStyles} from "@material-ui/core/styles";
 
 const drawerWidth = 240;
+
+export const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#ffffff'
+    },
+
+  }
+});
 
 export const useStyles = makeStyles(theme => ({
   root: {
