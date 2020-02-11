@@ -3,10 +3,8 @@ import clsx from 'clsx';
 
 import {
   AppBar,
-  Box,
   Badge,
   CssBaseline,
-  Container,
   Divider,
   Drawer,
   IconButton,
@@ -17,7 +15,6 @@ import {
 
 
 import {
-  createMuiTheme,
   ThemeProvider,
 } from '@material-ui/core/styles';
 
@@ -27,7 +24,6 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 
 import { t } from '../services/i18n';
 
-import Copyright from '../components/Copyright';
 import { mainDrawerItems } from "../containers/MenuItems";
 import { useStyles, theme } from "../styles";
 
@@ -35,7 +31,8 @@ import { useStyles, theme } from "../styles";
 /* Inspired on https://github.com/mui-org/material-ui/blob/master/docs/src/pages/getting-started/templates/dashboard/Dashboard.js */
 
 
-const Home = () => {
+const Home = (props) => {
+  const { children } = props;
   const classes = useStyles();
   const [open, setOpen] = React.useState(true);
   const handleDrawerOpen = () => {
@@ -88,16 +85,7 @@ const Home = () => {
           </Drawer>
           <main className={classes.content}>
             <div className={classes.appBarSpacer} />
-            <Container maxWidth="sm">
-              <Box my={4}>
-                <Typography variant="h1" component="h1" gutterBottom>
-                  {t('page_name')}
-                </Typography>
-
-
-                <Copyright />
-              </Box>
-            </Container>
+            {children}
           </main>
 
 

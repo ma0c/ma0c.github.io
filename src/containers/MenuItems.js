@@ -1,15 +1,17 @@
 import React from 'react';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import DashboardIcon from '@material-ui/icons/Dashboard';
+import {
+    ListItem,
+    ListItemIcon,
+    ListItemText
+} from '@material-ui/core';
+import {Link} from 'react-router-dom'
+
 import GroupWorkIcon from '@material-ui/icons/GroupWork';
-import PeopleIcon from '@material-ui/icons/People';
-import BarChartIcon from '@material-ui/icons/BarChart';
 import LayersIcon from '@material-ui/icons/Layers';
-import AssignmentIcon from '@material-ui/icons/Assignment';
 
 import { t } from '../services/i18n';
+import {PATH_HOME, PATH_TALKS} from '../routes';
+
 
 export const mainDrawerItems = (
   <div>
