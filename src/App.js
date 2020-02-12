@@ -9,11 +9,11 @@ import routes from './routes';
 function App() {
   return (
       <Suspense fallback="loading">
-          <Main>
-            <ConnectedRouter history={history}>
-                {routes}
-            </ConnectedRouter>
-          </Main>
+          <ConnectedRouter history={history}>
+              <Main>
+                  {routes}
+              </Main>
+          </ConnectedRouter>
       </Suspense>
 
   );

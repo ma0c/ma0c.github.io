@@ -24,7 +24,7 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 
 import { t } from '../services/i18n';
 
-import { mainDrawerItems } from "../containers/MenuItems";
+import { MainDrawerItemsWithRouter, MainDrawerItems } from "../containers/MenuItems";
 import { useStyles, theme } from "../styles";
 
 
@@ -80,7 +80,7 @@ const Home = (props) => {
               </IconButton>
             </div>
             <Divider />
-            <List>{mainDrawerItems}</List>
+            <MainDrawerItemsWithRouter/>
 
           </Drawer>
           <main className={classes.content}>
