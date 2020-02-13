@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box, Card, CardContent, CardHeader, Container, Typography} from '@material-ui/core';
+import {Box, Button, Card, CardActions, CardContent, CardHeader, Container, Typography} from '@material-ui/core';
 import {useStyles} from '../styles';
 
 import talks from '../services/dataProvider/talks'
@@ -21,6 +21,11 @@ export default  class Talks extends React.Component {
                              {talk.description}
                          </Typography>
                     </CardContent>
+                    <CardActions>
+                        <Button size="small"  href={talk.url}>
+                            Repo
+                        </Button>
+                    </CardActions>
                 </Card>
             </Box>
         )
