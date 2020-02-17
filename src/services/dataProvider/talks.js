@@ -1,7 +1,7 @@
- const talks = [
+const talks = [
      {
          id: 1,
-         title: "Chatbots Intro",
+         title: "Chatbots Intro (Spanish)",
          description: `Este repositorio es el material para una presentación introductoria al desarrollo de Chatbots con Python.
 
 Este repositorio contiene una página web que se usa como presentación y está disponible en Github Pages
@@ -25,18 +25,65 @@ Se prepara para el Meetup Python Cali
 
 Contenido de la presentación:
 
-Conceptos teóricos sobre contenedores
-Alternativas a Docker
-Arquitectura de Docker
-Facilidades para usar Docker
-Instalación de Docker Machine
-Despliegue de aplicaciones sobre Docker Machine
+- Conceptos teóricos sobre contenedores
+- Alternativas a Docker
+- Arquitectura de Docker
+- Facilidades para usar Docker
+- Instalación de Docker Machine
+- Despliegue de aplicaciones sobre Docker Machine
+
 En ejemplo-django existe una aplicación sencilla en Django, que cuenta con un ejemplo de Dockerfile necesario para crear una imagen de Docker y luego subirla al Registro de Docker`,
          url: "https://github.com/contraslash/con-la-ballena-a-la-nube",
          date: "2018-04-02"
      },
      {
          id: 3,
+         title: "Python Serverless (Spanish)",
+         description: `
+Los contenedores revolucionaron al mundo desde su popularización con 
+[docker](https://docker.io). La manera como cambian la manera del desarrollo 
+de software y apoyan [arquitecturas orientadas a servicios](https://es.wikipedia.org/wiki/Arquitectura_orientada_a_servicios), 
+[devops](https://es.wikipedia.org/wiki/DevOps), 
+[auto escalamiento](https://en.wikipedia.org/wiki/Autoscaling) y otros conceptos 
+hacen que sea una tecnología requerida para todos los desarrolladores y 
+administradores de sistemas.
+
+A pesar de la homogeneidad de los contenedores y todas sus ventajas, para casos 
+específicos, como apis calientes parecen comportarse de manera similar a un 
+servidor físico.
+
+Serverless nace para optimizar los computacionales relacionados con el proceso 
+en la nube reduciendo los costos de funcionamiento y permitiendo el escalamiento 
+rápido y eficiente sin que los tiempos de respuesta se vean afectados.
+
+El concepto de serverless  incluye delegar nuestro producto a terceros que puedan 
+manejar eficientemente cada segmento de la aplicación, como el alojamiento de 
+contenido estático, la autenticación, las bases de datos, las funciones de 
+proceso y el enrutamiento a dichas funciones. De una manera sencilla, es hacer 
+que un proveedor de nube se vuelva nuestro framework de desarrollo.
+
+En la charla hablaremos un poco de que es serverless, su profunda relación con 
+el concepto de Functions as a Service, algunas consideraciones arquitecturales 
+para serverless, como conceptos claves de microservicios se adaptan de igual 
+manera al serverless, y ejemplos prácticos de como realizar una aplicación y 
+desplegarla en AWS usando chalice y zappa
+
+Enlaces útiles
+
+- [Serverles !=  FaaS](https://thenewstack.io/add-it-up-serverless-faas/)
+- [Serverless is more than FaaS](https://medium.com/@PaulDJohnston/serverless-its-much-much-more-than-faas-a342541b982e)
+- [What you need to know about serverless](https://medium.com/stacks-on-stacks/what-successful-serverless-teams-know-fb5629c4358f)
+- [Common errors with serverless](https://medium.com/stacks-on-stacks/serverless-secrets-the-three-things-teams-get-wrong-9fa0410f6e06)
+- [Challenges with serverless](https://medium.com/stacks-on-stacks/the-serverless-learning-curve-74e40d3be85c)
+- [Definición de Serverless Martin Fowler](https://martinfowler.com/articles/serverless.html)
+- [Confussion in the age of Serverless](https://www.youtube.com/watch?v=Y6B3Eqlj9Fw)
+- [From flask to serverless](https://www.spantree.net/blog/2018/09/04/from-flask-to-serverless.html)
+- [Serverless Python PyOhio](https://www.youtube.com/watch?v=mijpESCucRQ)`,
+         url: "https://github.com/contraslash/con-la-ballena-a-la-nube",
+         date: "2018-04-02"
+     },
+     {
+         id: 4,
          title: "Automatizando el hogar con Python Raspberry PI y Reconocimiento de voz (Spanish)",
          description: `Amazon Echo marcó un hito gigante en la percepción de la tecnología. Si bien el reconocimiento de voz es algo presente en la investigación por mas de 60 años, la brecha entre el lenguaje natural hablado y el entendido por un ordenador se cerró abruptamente en la última década. Las búsquedas por voz de Google ya eran posibles desde hace algún tiempo, pero un dispositivo listo para usuario final con características de personalización e integración con dispositivos en el mercado causó gran impacto en la población estado unidense tanto que tan solo en 2017 se vendieron mas de 20 millones de dispositivos. Otras alternativas como Google Home, Apple HomePod, Sonos o Mycroft cerran la brecha mas y mas haciendo que el control domótico del hogar sea una labor trivial.
 
@@ -53,24 +100,24 @@ Dejando la teoría y permitiendo que nuestro cerebro respire un poco, trabajarem
          date: "2019-02-13"
      },
      {
-         id: 4,
+         id: 5,
          title: "Una guía rápida de Docker (Spanish)",
-         description: "Charla del post https://medium.com/contraslashsas/una-gu%C3%ADa-no-tan-r%C3%A1pida-de-docker-2fab9243762a",
+         description: "Charla del post [Una guía rápida de Docker](https://medium.com/contraslashsas/una-gu%C3%ADa-no-tan-r%C3%A1pida-de-docker-2fab9243762a)",
          url: "https://github.com/contraslash/una-guia-rapida-de-docker",
          date: "2019-04-26"
      },
      {
-         id: 5,
-         title: "CI/CD con Github Actions",
+         id: 6,
+         title: "CI/CD con Github Actions (Spanish)",
          description: `Diapositivas para la presentación de integración, entrega y despliegue continuos usando Github Actions.
 
-Se toma como referencia este post: https://medium.com/contraslashsas/integraci%C3%B3n-entrega-y-despliegue-cont%C3%ADnuo-con-github-actions-f49001e49541`,
+Se toma como referencia [este post](https://medium.com/contraslashsas/integraci%C3%B3n-entrega-y-despliegue-cont%C3%ADnuo-con-github-actions-f49001e49541)`,
          url: "https://github.com/contraslash/ci-cd-github-actions",
          date: "2019-04-26"
      },
      {
-         id: 6,
-         title: "Hablemos de voz",
+         id: 7,
+         title: "Hablemos de voz (Spanish)",
          description: `Desde que creamos los ordenadores nos hemos preguntado si serán inteligentes, Alan Turing en la prueba que lleva su nombre describió inteligencia como la capacidad de mantener una "conversación" con un agente y que sea indiferenciado con un humano. ¡Y la mayoría de seres humanos nos comunicamos hablando!
 
 Desde los años 60, en los laboratorios de IBM y AT&T prototipos capaces de reconocer palabras han sido desarrollados y ochenta años después, los reconocedores automáticos de voz hacen parte de nuestra vida: Google Assistant, Siri, Alexa, Cortana y muchos otros.

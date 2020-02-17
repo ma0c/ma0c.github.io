@@ -4,27 +4,26 @@ import ReactMarkdown from 'react-markdown';
 
 import { t } from '../services/i18n';
 
-import talks from '../services/dataProvider/talks'
+import openSource from '../services/dataProvider/open_source'
 
 
-export default  class Talks extends React.Component {
+export default  class OpenSource extends React.Component {
 
-    createCard = (talk) => {
+    createCard = (openSourceProject) => {
         const {classes} = this.props;
         return (
-            <Box component="span" m={1} key={talk.id}>
+            <Box component="span" m={1} key={openSourceProject.id}>
                 <Card className={classes}>
                     <CardHeader
-                        title={talk.title}
-                        subheader={talk.date}
+                        title={openSourceProject.title}
                     />
                     <CardContent>
                          <Typography variant="body2" color="textSecondary" component="p">
-                             <ReactMarkdown source={talk.description} />
+                             <ReactMarkdown source={openSourceProject.description} />
                          </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button size="small"  href={talk.url}>
+                        <Button size="small"  href={openSourceProject.url}>
                             {t('Repo')}
                         </Button>
                     </CardActions>
@@ -34,17 +33,17 @@ export default  class Talks extends React.Component {
     };
 
     render() {
-        const {talks} = this.props;
-        const cards = talks.map(talk => this.createCard(talk));
+        const {openSource} = this.props;
+        const openSourceProjects = openSource.map(talk => this.createCard(talk));
         return (
             <Container>
-                {cards}
+                {openSourceProjects}
             </Container>
         )
     }
 
 };
 
-Talks.defaultProps = {
-    talks: talks
+OpenSource.defaultProps = {
+    openSource: openSource
 };

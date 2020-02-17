@@ -7,30 +7,46 @@ import {
 } from '@material-ui/core';
 import {Link, withRouter} from 'react-router-dom'
 
-import GroupWorkIcon from '@material-ui/icons/GroupWork';
-import LayersIcon from '@material-ui/icons/Layers';
+import HomeIcon from '@material-ui/icons/Home';
+import RecordVoiceOverIcon from '@material-ui/icons/RecordVoiceOver';
+import AccountTree from '@material-ui/icons/AccountTree';
 
 import { t } from '../services/i18n';
-import {PATH_HOME, PATH_TALKS} from '../routes';
+import {PATH_HOME, PATH_TALKS, PATH_OPEN_SOURCE} from '../routes';
 
+const RoutedListItem = (props) => (
+    <ListItem component={Link} to={props.path} selected={props.location.pathname === props.path} button>
+        <ListItemIcon>
+            {props.icon}
+        </ListItemIcon>
+        <ListItemText primary={props.name} />
+    </ListItem>
+);
 
 export class MainDrawerItems extends React.Component{
     render() {
         // console.log(this.props);
         return  (
             <List>
-                <ListItem component={Link} to={PATH_HOME} selected={this.props.location.pathname === PATH_HOME} button>
-                    <ListItemIcon>
-                        <GroupWorkIcon />
-                    </ListItemIcon>
-                    <ListItemText primary={t('Home')} />
-                </ListItem>
-                <ListItem component={Link} to={PATH_TALKS} selected={this.props.location.pathname === PATH_TALKS} button>
-                    <ListItemIcon>
-                        <LayersIcon />
-                    </ListItemIcon>
-                    <ListItemText primary={t('Talks')} />
-                </ListItem>
+                <RoutedListItem
+                    path={PATH_HOME}
+                    name={t('Home')}
+                    icon={<HomeIcon/>}
+                    location={this.props.location}
+                />
+                <RoutedListItem
+                    path={PATH_TALKS}
+                    name={t('Talks')}
+                    icon={<RecordVoiceOverIcon/>}
+                    location={this.props.location}
+                />
+                <RoutedListItem
+                    path={PATH_OPEN_SOURCE}
+                    name={t('Open Source')}
+                    icon={<AccountTree/>}
+                    location={this.props.location}
+                />
+
             </List>
         )
     }

@@ -3,12 +3,10 @@ import clsx from 'clsx';
 
 import {
   AppBar,
-  Badge,
   CssBaseline,
   Divider,
   Drawer,
   IconButton,
-  List,
   Typography,
   Toolbar,
 } from '@material-ui/core';
@@ -20,11 +18,10 @@ import {
 
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import NotificationsIcon from '@material-ui/icons/Notifications';
 
 import { t } from '../services/i18n';
 
-import { MainDrawerItemsWithRouter, MainDrawerItems } from "../containers/MenuItems";
+import { MainDrawerItemsWithRouter } from "../containers/MenuItems";
 import { useStyles, theme } from "../styles";
 
 
@@ -60,11 +57,6 @@ const Home = (props) => {
               <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
                 {t('Mauricio Collazos')}
               </Typography>
-              <IconButton color="inherit">
-                <Badge badgeContent={4} color="secondary">
-                  <NotificationsIcon />
-                </Badge>
-              </IconButton>
             </Toolbar>
           </AppBar>
           <Drawer

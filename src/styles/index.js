@@ -88,4 +88,8 @@ export const useStyles = makeStyles(theme => ({
   fixedHeight: {
     height: 240,
   },
+  largePicture: {
+    width: theme.spacing(10),
+    height: theme.spacing(10),
+  },
 }));
