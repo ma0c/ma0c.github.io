@@ -23,7 +23,7 @@ export default  class OpenSource extends React.Component {
                          </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button size="small"  href={openSourceProject.url}>
+                        <Button size="small"  href={openSourceProject.repo}>
                             {t('Repo')}
                         </Button>
                     </CardActions>

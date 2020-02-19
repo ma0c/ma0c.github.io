@@ -23,8 +23,11 @@ export default  class Courses extends React.Component {
                          </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button size="small"  href={course.url}>
+                        <Button size="small"  href={course.web}>
                             {t('Page')}
+                        </Button>
+                        <Button size="small"  href={course.repo}>
+                            {t('Repo')}
                         </Button>
                     </CardActions>
                 </Card>
