@@ -4,28 +4,27 @@ import ReactMarkdown from 'react-markdown';
 
 import { t } from '../services/i18n';
 
-import talks from '../services/dataProvider/talks'
+import courses from '../services/dataProvider/courses'
 
 
-export default  class Talks extends React.Component {
+export default  class Courses extends React.Component {
 
-    createCard = (talk) => {
+    createCard = (course) => {
         const {classes} = this.props;
         return (
-            <Box component="span" m={1} key={talk.id}>
+            <Box component="span" m={1} key={course.id}>
                 <Card className={classes}>
                     <CardHeader
-                        title={talk.title}
-                        subheader={talk.date}
+                        title={course.title}
                     />
                     <CardContent>
                          <Typography variant="body2" color="textSecondary" component="p">
-                             <ReactMarkdown source={talk.description} />
+                             <ReactMarkdown source={course.description} />
                          </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button size="small"  href={talk.url}>
-                            {t('Slides')}
+                        <Button size="small"  href={course.url}>
+                            {t('Page')}
                         </Button>
                     </CardActions>
                 </Card>
@@ -34,17 +33,17 @@ export default  class Talks extends React.Component {
     };
 
     render() {
-        const {talks} = this.props;
-        const cards = talks.map(talk => this.createCard(talk));
+        const {courses} = this.props;
+        const coursesCards = courses.map(talk => this.createCard(talk));
         return (
             <Container>
-                {cards}
+                {coursesCards}
             </Container>
         )
     }
 
 };
 
-Talks.defaultProps = {
-    talks: talks
+Courses.defaultProps = {
+    courses: courses
 };
