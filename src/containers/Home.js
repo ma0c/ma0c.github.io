@@ -2,7 +2,6 @@ import React from 'react'
 
 import {
   Avatar,
-  Box,
   Grid,
   Container,
   Typography,
@@ -20,16 +19,22 @@ const Home = () => {
     const classes = useStyles();
   return (
             <Container maxWidth="sm">
-              <Box my={4} justifyContent="center" alignContent="center" alignItems="center">
-                <Typography variant="h3" component="h3" gutterBottom>
-                    {t('Mauricio Collazos')}
-                </Typography>
-                  <Avatar alt="Mauricio Collazos" src={photo} className={classes.largePicture} />
-                  <Typography variant="body1">
-                      {t('Master Student in Computer Science at Universidad del Valle. Software engineer, system administrator and speech technologies researcher')}
-                  </Typography>
+              <Grid container my={5} justify="center" alignContent="center" alignItems="center" direction="column">
+                <Grid item xs={12}>
+                    <Typography variant="h3" component="h3"   >
+                        {t('Mauricio Collazos')}
+                    </Typography>
+                </Grid>
+                  <Grid item xs={12} alignSelf="center" alignContent="center">
+                      <Avatar alt="Mauricio Collazos" src={photo} className={classes.largePicture} alignSelf="center"  />
+                  </Grid>
+                  <Grid item xs={12}>
+                      <Typography variant="body1">
+                          {t('Master Student in Computer Science at Universidad del Valle. Software engineer, system administrator and speech technologies researcher')}
+                      </Typography>
+                  </Grid>
                 <Copyright />
-              </Box>
+              </Grid>
             </Container>
   )
 };
