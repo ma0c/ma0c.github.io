@@ -1,7 +1,7 @@
 const talks = [
      {
          id: 1,
-         title: "Chatbots Intro (Spanish)",
+         title: "Chatbots Intro",
          description: `Este repositorio es el material para una presentación introductoria al desarrollo de Chatbots con Python.
 
 Este repositorio contiene una página web que se usa como presentación y está disponible en Github Pages
@@ -18,7 +18,7 @@ Cualquier observación, inquietud o pregunta puede ser remitida a este correo`,
      },
      {
          id: 2,
-         title: "Con la ballena a la nube (Spanish)",
+         title: "Con la ballena a la nube",
          description: `Presentación sobre el despliegue de aplicaciones en python utilizando contenedores Docker
 
 Se prepara para el Meetup Python Cali
@@ -38,7 +38,7 @@ En ejemplo-django existe una aplicación sencilla en Django, que cuenta con un e
      },
      {
          id: 3,
-         title: "Python Serverless (Spanish)",
+         title: "Python Serverless",
          description: `
 Los contenedores revolucionaron al mundo desde su popularización con 
 [docker](https://docker.io). La manera como cambian la manera del desarrollo 
@@ -84,7 +84,7 @@ Enlaces útiles
      },
      {
          id: 4,
-         title: "Automatizando el hogar con Python Raspberry PI y Reconocimiento de voz (Spanish)",
+         title: "Automatizando el hogar con Python Raspberry PI y Reconocimiento de voz",
          description: `Amazon Echo marcó un hito gigante en la percepción de la tecnología. Si bien el reconocimiento de voz es algo presente en la investigación por mas de 60 años, la brecha entre el lenguaje natural hablado y el entendido por un ordenador se cerró abruptamente en la última década. Las búsquedas por voz de Google ya eran posibles desde hace algún tiempo, pero un dispositivo listo para usuario final con características de personalización e integración con dispositivos en el mercado causó gran impacto en la población estado unidense tanto que tan solo en 2017 se vendieron mas de 20 millones de dispositivos. Otras alternativas como Google Home, Apple HomePod, Sonos o Mycroft cerran la brecha mas y mas haciendo que el control domótico del hogar sea una labor trivial.
 
 Pero no podemos creer que debemos usar una alternativa privada para realizar el control de nuestro hogar, pues alternativas de hardware libre y software libre combinadas nos permiten lograr los mismos resultados con un poco de esfuerzo y mucha mas satisfacción.
@@ -101,14 +101,14 @@ Dejando la teoría y permitiendo que nuestro cerebro respire un poco, trabajarem
      },
      {
          id: 5,
-         title: "Una guía rápida de Docker (Spanish)",
+         title: "Una guía rápida de Docker",
          description: "Charla del post [Una guía rápida de Docker](https://medium.com/contraslashsas/una-gu%C3%ADa-no-tan-r%C3%A1pida-de-docker-2fab9243762a)",
          url: "https://github.com/contraslash/una-guia-rapida-de-docker",
          date: "2019-04-26"
      },
      {
          id: 6,
-         title: "CI/CD con Github Actions (Spanish)",
+         title: "CI/CD con Github Actions",
          description: `Diapositivas para la presentación de integración, entrega y despliegue continuos usando Github Actions.
 
 Se toma como referencia [este post](https://medium.com/contraslashsas/integraci%C3%B3n-entrega-y-despliegue-cont%C3%ADnuo-con-github-actions-f49001e49541)`,
@@ -117,7 +117,7 @@ Se toma como referencia [este post](https://medium.com/contraslashsas/integraci%
      },
      {
          id: 7,
-         title: "Hablemos de voz (Spanish)",
+         title: "Hablemos de voz",
          description: `Desde que creamos los ordenadores nos hemos preguntado si serán inteligentes, Alan Turing en la prueba que lleva su nombre describió inteligencia como la capacidad de mantener una "conversación" con un agente y que sea indiferenciado con un humano. ¡Y la mayoría de seres humanos nos comunicamos hablando!
 
 Desde los años 60, en los laboratorios de IBM y AT&T prototipos capaces de reconocer palabras han sido desarrollados y ochenta años después, los reconocedores automáticos de voz hacen parte de nuestra vida: Google Assistant, Siri, Alexa, Cortana y muchos otros.

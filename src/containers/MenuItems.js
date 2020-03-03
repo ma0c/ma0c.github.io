@@ -31,13 +31,13 @@ export class MainDrawerItems extends React.Component{
             <List>
                 <RoutedListItem
                     path={PATH_HOME}
-                    name={t('Home')}
+                    name={t('Inicio')}
                     icon={<HomeIcon/>}
                     location={this.props.location}
                 />
                 <RoutedListItem
                     path={PATH_TALKS}
-                    name={t('Talks')}
+                    name={t('Charlas')}
                     icon={<RecordVoiceOverIcon/>}
                     location={this.props.location}
                 />
@@ -49,7 +49,7 @@ export class MainDrawerItems extends React.Component{
                 />
                 <RoutedListItem
                     path={PATH_COURSES}
-                    name={t('Courses')}
+                    name={t('Cursos')}
                     icon={<LocalLibraryIcon/>}
                     location={this.props.location}
                 />

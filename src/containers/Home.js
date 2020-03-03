@@ -7,6 +7,11 @@ import {
   Typography,
 } from '@material-ui/core';
 
+import TwitterIcon from '@material-ui/icons/Twitter';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import EmailIcon from '@material-ui/icons/Email';
+
 
 import { t } from '../services/i18n';
 
@@ -30,9 +35,34 @@ const Home = () => {
                   </Grid>
                   <Grid item xs={12}>
                       <Typography variant="body1">
-                          {t('Master Student in Computer Science at Universidad del Valle. Software engineer, system administrator and speech technologies researcher')}
+                          {t('Estudiante de Maestria en Ingenieria con Enfasis en Ingenieria de Sistemas y Computacion en la universidad del valle, Desarrollador de Software Full Stack (Django/React), administrador de sistemas e investigador en Procesamiento de Voz')}
+                      </Typography>
+                      <Typography variant="body1">
+                          {t('')}
                       </Typography>
                   </Grid>
+
+                  <Grid item xs={1}>
+                      <a href="http://twitter.com/ma0collazos">
+                          <TwitterIcon fontSize="small"/>
+                      </a>
+                  </Grid>
+                  <Grid item xs={1}>
+                      <a href="http://linkedin.com/in/mauricio-collazos">
+                          <LinkedInIcon fontSize="small"/>
+                      </a>
+                  </Grid>
+                  <Grid item xs={1}>
+                      <a href="http://github.com/ma0c">
+                          <GitHubIcon fontSize="small"/>
+                      </a>
+                  </Grid>
+                  <Grid item xs={1}>
+                      <a href="mailto:ma0@contraslash.com">
+                          <EmailIcon fontSize="small"/>
+                      </a>
+                  </Grid>
+
                 <Copyright />
               </Grid>
             </Container>
